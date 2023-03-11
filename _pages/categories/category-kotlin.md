@@ -4,7 +4,6 @@ layout: archive
 permalink: categories/kotlin
 author_profile: true
 sidebar_main: true
-
 ---
 
 
