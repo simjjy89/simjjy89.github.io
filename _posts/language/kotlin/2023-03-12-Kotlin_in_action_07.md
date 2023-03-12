@@ -22,12 +22,12 @@ last_modified_at: 2023-03-12
 - 코틀린의 산술연산자
   - 원시타입 뿐만 아니라 다른 클래스에서도 산술연산자를 사용하여 직관적인 표현이 가능
   ```kotlin
-      val num1: BigInteger = BigInteger("100")
-      val num2: BigInteger = BigInteger("200")
-      
-      // 동일하게 동작한다.
-      val num3 = num1.add(num2)  
-      val num3 = num1 + num2
+        val num1: BigInteger = BigInteger("100")
+        val num2: BigInteger = BigInteger("200")
+        
+        // 동일하게 동작한다.
+        val num3 = num1.add(num2)  
+        val num3 = num1 + num2
   ```
 
 ### 이항 산술 연산 오버로딩
