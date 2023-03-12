@@ -67,6 +67,7 @@ Point(x=40, y=60)
 |a - b|minus|
 
 - 연사자를 정의할 때 두 피연사자의 타입이 같을 필요는 없음
+
 ```kotlin
 operator fun Point.times(scale: Double): Point {
     return Point((x * scale).toInt(), (y * scale).toInt())
