@@ -4,7 +4,7 @@ excerpt: "연산자오버로딩, 관례, 위임 프로퍼티에 대해 알아보
 
 categories:
   - kotlin
-  
+
 tags:
   - [kotlin, jekyll, Github, Git]
 
@@ -137,16 +137,14 @@ operator  fun <T> MutableCollection<T>.plusAssign(element: T) {
     val newList = list+ listOf(4,5) //읽기전용 리스트
     println(System.identityHashCode(newList))
     println(newList)  
-    
+
 -----------------------------------------------------------
-    
+
 1845066581
 1845066581
 2136344592
 [1, 2, 3, 4, 5]
 ```
-
-
 
 ### 단항 연산자 오버로딩
 
@@ -161,13 +159,9 @@ println(-p1)
 Point(x=-10, y=-20)
 ```
 
-
-
 ### 비교 연산자 오버로딩
 
 코틀린에서는 원시타입뿐만 아니라 모든 객체에 대해 비교 연산을 수행 할 수 있음.
-
-
 
 ##### 동등 연산자 : equals
 
@@ -175,8 +169,4 @@ Point(x=-10, y=-20)
 
 - != 연산자를 사용하는 식도 equals 호출로 컴파일.
 
-
-
 ##### 순서 연산자 : compareTo
-
- 
