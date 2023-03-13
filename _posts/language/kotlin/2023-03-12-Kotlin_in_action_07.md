@@ -118,3 +118,65 @@ Point(x=4, y=6)
 ```
 
 반환타입이 Unit인 plussAssign 함수를 정의하면 코틀린은 += 연산자에 그 함수를 사용한다. 
+
+코틀린 표준 라이브러리는 변경 가능한 컬렉션에 대해 plusAssign을 정의함.
+
+```kotlin
+operator  fun <T> MutableCollection<T>.plusAssign(element: T) {
+    this.add(element)
+}
+```
+
++와 -는 항상 새로운 컬렉션을 반환하며, +=와 -= 연산자는 항상 변경 가능한 컬렉션에 작용해 메모리에 있는 객체 상태를 변화시킴. 
+
+또한, 읽기전용 컬렉션에서 +=, -=는 변경을 적용한 복사본을 반환.
+
+```kotlin
+    val list = arrayListOf(1,2) //가변 리스트
+    println(System.identityHashCode(list))
+    list+=3
+    println(System.identityHashCode(list))
+    val newList = list+ listOf(4,5) //읽기전용 리스트
+    println(System.identityHashCode(newList))
+    println(newList)  
+    
+-----------------------------------------------------------
+    
+1845066581
+1845066581
+2136344592
+[1, 2, 3, 4, 5]
+```
+
+
+
+### 단항 연산자 오버로딩
+
+```kotlin
+operator fun Point.unaryMinus() : Point{ //단항 함수는 파라미터가 없다
+    return Point(-x,-y) //좌표에서 각 성분의 음수를 취한 새 점을 반환
+}
+
+val p1 = Point(10, 20)
+println(-p1)
+--------------------------------------------------------
+Point(x=-10, y=-20)
+```
+
+
+
+### 비교 연산자 오버로딩
+
+코틀린에서는 원시타입뿐만 아니라 모든 객체에 대해 비교 연산을 수행 할 수 있음.
+
+
+
+##### 동등 연산자 : equals
+
+- == 연산자 호출은 equals 메소드 호출러 컴파일됨
+
+- != 연산자를 사용하는 식도 equals 호출로 컴파일.
+
+
+
+##### 순서 연산자 : compareTo
