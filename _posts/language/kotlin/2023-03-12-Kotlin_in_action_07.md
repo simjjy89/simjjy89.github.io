@@ -1,20 +1,18 @@
 ---
-
 title:  "코틀린 인 액션 07장 연산자 오버로딩과 기타 관례"
 excerpt: "연산자오버로딩, 관례, 위임 프로퍼티에 대해 알아보자"
 
 categories:
-
-- kotlin
-  tags:
-- [kotlin, jekyll, Github, Git]
+  - kotlin
+  
+tags:
+  - [kotlin, jekyll, Github, Git]
 
 toc: true
 toc_sticky: true
 
 date: 2023-03-12
 last_modified_at: 2023-03-12
-
 ---
 
 ## 연산자 오버로딩과 기타 관례
