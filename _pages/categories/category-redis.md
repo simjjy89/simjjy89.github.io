@@ -1,5 +1,5 @@
 ---
-title: "redis"
+title: "레디스"
 layout: archive
 permalink: categories/redis
 author_profile: true
