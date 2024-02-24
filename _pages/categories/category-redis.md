@@ -1,7 +1,7 @@
 ---
 title: "redis"
 layout: archive
-permalink: categories/Redis
+permalink: categories/redis
 author_profile: true
 sidebar_main: true
 ---
