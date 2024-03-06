@@ -10,8 +10,8 @@ tags:
 toc: true
 toc_sticky: true
  
-date: 2024-03-07
-last_modified_at: 2024-03-07
+date: 2024-03-06
+last_modified_at: 2024-03-06
 ---
 
 ### item3. 최대한 플랫폼 타입을 사용하지 말라
